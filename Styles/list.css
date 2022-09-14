@@ -10,6 +10,7 @@ html, body {
 body {
 	font-size: 1.4rem;
 	text-rendering: optimizeLegibility;
+	text-align: center;
 }
 	/* sets the base font size for the document; turns on kerning pairs and ligatures */
 	
