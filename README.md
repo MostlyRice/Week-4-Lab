@@ -1,4 +1,4 @@
-# Week 2 Lab: Bootstrap, CSS, Git and GitHub
+# Week 4 Lab: Intro to JavaScript - Events and the DOM
 
-Week 3 Lab for MCTC's Web Client and Server Programming class.
+Week 4 Lab for MCTC's Web Client and Server Programming class.
 Lots of different parts for this week's lab.
