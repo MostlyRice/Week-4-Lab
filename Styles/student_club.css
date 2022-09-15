@@ -1,0 +1,30 @@
+.selected {
+    text-decoration: line-through ;
+    font-style: italic;
+    color: gray;
+  }
+
+  input {
+      width: 100%;
+      padding: 5px;
+      margin: 5px 5px 5px 0px;
+      box-sizing: border-box;
+  }
+
+  #add-student, #remove-selected-students {
+    outline:none;
+    border:none;
+    color:#fff;
+    background:tomato;
+}
+
+#add-students-form {
+    text-align: left;
+}
+
+.jumbotron {
+    font-size:18px;
+    color:#fff;
+    background:#55acee;
+    text-align:center;
+}
