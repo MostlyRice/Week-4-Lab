@@ -6,6 +6,9 @@ let studentGPA = document.querySelector('#student-gpa')
 let studentList = document.querySelector('#student-list')
 let addStudent = document.querySelector('#add-student')
 let studentsInList = 0
+let parentElement = document.body;
+// Using JavaScript, display 0 in the span#student-count
+studentCount.innerHTML = studentsInList
 
 // Event listener for the saveButton
 addStudent.addEventListener('click', function() {
@@ -33,7 +36,7 @@ if (studentNameText  == '' ){
 // Create a new li item
 let listItem = document.createElement('li')
 // The li element text should be the text from the input
-listItem.innerHTML = ' ' + studentNameText + ' ' + studentIDText + ' ' + studentGPAText
+listItem.innerHTML = ' ' + studentNameText + ' ID: ' + studentIDText + ' GPA: ' + studentGPAText
 // Add the new li element as a child of the ul element
 studentList.appendChild(listItem)
 // Clears the text in the input
@@ -42,8 +45,16 @@ studentID.value = ''
 studentGPA.value = ''
 // Adds to the counter
 studentsInList++
-studentCount.innerHTML = studentsInList
+// Sets the new li element's ID
+listItem.setAttribute('id', studentsInList)
 })
+
+listItem.addEventListener('click', function(){
+
+
+    listItem.classList.add("selected");
+})
+
     /* Add the following functionality to this page
 
     [Note on HTML element notation: span#student-count means the span element with id="student-count" ]
