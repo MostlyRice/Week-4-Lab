@@ -5,7 +5,6 @@
   let textList = document.querySelector('#list')
   let clearButton = document.querySelector('#clear-list')
 
-
   let elementsInList = 0
   let maxElements = 10
   

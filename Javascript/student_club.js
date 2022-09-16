@@ -1,6 +1,18 @@
+ // Variables
+let studentCount = document.querySelector('#student-count')
+let studentName = document.querySelector('#student-name')
+let studentID = document.querySelector('#student-id')
+let studentGPA = document.querySelector('#student-gpa')
+let addStudent = document.querySelector('#add-student')
+// Event listener for the saveButton
+addStudent.addEventListener('click', function() {
+// Reads the text in the input
+let studentNameText = studentName.value
+let studentIDText = studentID.value
+let studentGPAText = studentGPA.value
 
-
-
+console.log(studentNameText, studentIDText, studentGPAText)
+})
     /* Add the following functionality to this page
 
     [Note on HTML element notation: span#student-count means the span element with id="student-count" ]
