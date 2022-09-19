@@ -30,7 +30,7 @@ if (studentNameText  == '' ){
     return
   }
 
-  if (studentGPAText  >= 4 || studentGPAText  == ''){
+  if (studentGPAText  >= 4 ){
     alert('GPA range has to be between 0-4.')
     return
   }
@@ -47,10 +47,21 @@ studentID.value = ''
 studentGPA.value = ''
 // Adds to the counter
 studentsInList++
-// Sets the new li element's ID
-listItem.setAttribute('id', studentsInList)
+// Sets the new li element's 
+listItem.setAttribute('onclick', 'selectToggle()')
 })
 
+ function selectToggle()
+{
+  if ( studentList.className == '')
+  {
+    studentList.setAttribute("class", "selected"); 
+  }
+  else
+  {
+    studentList.setAttribute("class", ""); 
+  }
+}
 // listItem.addEventListener('click', function(){
 
 
@@ -70,10 +81,9 @@ listItem.setAttribute('id', studentsInList)
    
  // }
  
-  document.querySelector('#student-list').addEventListener('click', function () {
-    console.log(studentList.listItem)
-    studentList.classList.toggle('selected')
-   });
+  // studentList.addEventListener('click', function () {
+  //   studentList.classList.toggle('selected')
+  //  });
  
   removeSelectedStudents.addEventListener('click', function () {
    let elementsToDelete = document.querySelectorAll('.selected')
