@@ -60,9 +60,10 @@
 
 
  // Add an event listener so that when button#remove-selected-students is clicked: Remove all of the elements with the class="selected" from the list.
- removeSelectedStudents.addEventListener('click', function() {
-     let elementsToDelete = document.querySelectorAll('.selected')
-     elementsToDelete.forEach(function(element) {
-         element.remove()
-     })
- });
+removeStudentsButton.addEventListener('click', function() {
+    // remove all items with class 'selected'
+    let elementsToDelete = document.querySelectorAll('selected')
+    elementsToDelete.forEach( function(element) {
+        element.remove()
+    })
+})
